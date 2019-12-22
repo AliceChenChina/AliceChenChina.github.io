@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>golang · Jane - A super concise theme for Hugo</title>
+  <title>如何用hugo搭建个人博客 - Jane - A super concise theme for Hugo</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -22,8 +22,9 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="xianmin" />
-  <meta name="description" content="Hugo theme jane example site." />
+<meta name="author" content="Alice Chen" />
+  <meta name="description" content="1.先下载hugo软件 mac下载比较简单，直接在命令行输入brew install hugo 安装成功后，可使用hugo version查看版本号 window系统需要" />
+
   <meta name="keywords" content="Hugo, theme, jane" />
 
 
@@ -34,8 +35,8 @@
 <meta name="generator" content="Hugo 0.61.0" />
 
 
-<link rel="canonical" href="http://localhost:1313/tags/golang/" />
-<link href="/tags/golang/index.xml" rel="alternate" type="application/rss+xml" title="Jane - A super concise theme for Hugo" />
+<link rel="canonical" href="http://localhost:1313/post/how-to-create-blog/" />
+
 
 
 
@@ -58,15 +59,23 @@
 
 
 
-<meta property="og:title" content="golang" />
-<meta property="og:description" content="Hugo theme jane example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/tags/golang/" />
-<meta property="og:updated_time" content="2019-12-22T00:00:00+00:00" />
-<meta itemprop="name" content="golang">
-<meta itemprop="description" content="Hugo theme jane example site."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="golang"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+<meta property="og:title" content="如何用hugo搭建个人博客" />
+<meta property="og:description" content="1.先下载hugo软件 mac下载比较简单，直接在命令行输入brew install hugo 安装成功后，可使用hugo version查看版本号 window系统需要" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/how-to-create-blog/" />
+<meta property="article:published_time" content="2019-12-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-12-22T00:00:00+00:00" />
+<meta itemprop="name" content="如何用hugo搭建个人博客">
+<meta itemprop="description" content="1.先下载hugo软件 mac下载比较简单，直接在命令行输入brew install hugo 安装成功后，可使用hugo version查看版本号 window系统需要">
+<meta itemprop="datePublished" content="2019-12-22T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-12-22T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="380">
+
+
+
+<meta itemprop="keywords" content="go,golang,templates,themes,development," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="如何用hugo搭建个人博客"/>
+<meta name="twitter:description" content="1.先下载hugo软件 mac下载比较简单，直接在命令行输入brew install hugo 安装成功后，可使用hugo version查看版本号 window系统需要"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -325,55 +334,132 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-
-<section id="archive" class="archive">
-  
+          <article class="post bg-white">
     
-      <div class="archive-title tag">
-        <h2 class="archive-name">标签： golang</h2>
+    <header class="post-header">
+      <h1 class="post-title">如何用hugo搭建个人博客</h1>
+      
+      <div class="post-meta">
+        <time datetime="2019-12-22" class="post-time">
+          2019-12-22
+        </time>
+        <div class="post-category">
+            <a href="http://localhost:1313/categories/development/"> Development </a>
+            <a href="http://localhost:1313/categories/golang/"> golang </a>
+            <a href="http://localhost:1313/categories/index/"> index </a>
+            
+          </div>
+        
+
+        
+        
+
+        
+        
       </div>
+    </header>
+
     
-  
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1hugo">1.先下载hugo软件</a></li>
+        <li><a href="#2">2.在终端，先进入到自己放博客项目的文件目录下；</a></li>
+        <li><a href="#3hugo-new-site-alicechenchinagithubio-creatoralicechenchinagithubiogithub">3.在命令行中输入hugo new site alicechenchina.github.io-creator，注意alicechenchina.github.io为你的github上面的名字，而且字母全部要小写；</a></li>
+        <li><a href="#4janehttpsgithubcomxianminhugo-theme-jane">4.接下来要选择一个主题，我建议不要使用官方的默认主题，我试过在我电脑上有问题，推荐使用jane主题</a></li>
+        <li><a href="#5hugo-server">5.接下来就可以启动项目了，使用hugo server可以使你本地查看你的博客的样子</a></li>
+        <li><a href="#6hugo-new-postyourmdmdcontentpostpost">6.可使用hugo new post/your.md创建新的md文档，当然你也可以手动进入content/post,在post文档新建博客；</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
 
-  
-    <div class="archive-post">
-      <time datetime="2019-12-22" class="archive-post-time">
-        2019-12-22
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/how-to-create-blog/" class="archive-post-link">
-          如何用hugo搭建个人博客
-        </a>
-      </span>
+    
+    <div class="post-content">
+      <h3 id="1hugo">1.先下载hugo软件</h3>
+<ul>
+<li>mac下载比较简单，直接在命令行输入<code>brew install hugo</code>
+安装成功后，可使用<code>hugo version</code>查看版本号</li>
+<li>window系统需要先下载软件，然后在系统环境变量path中加入hugo的路径;</li>
+</ul>
+<h3 id="2">2.在终端，先进入到自己放博客项目的文件目录下；</h3>
+<h3 id="3hugo-new-site-alicechenchinagithubio-creatoralicechenchinagithubiogithub">3.在命令行中输入<code>hugo new site alicechenchina.github.io-creator</code>，注意alicechenchina.github.io为你的github上面的名字，而且字母全部要小写；</h3>
+<h3 id="4janehttpsgithubcomxianminhugo-theme-jane">4.接下来要选择一个主题，我建议不要使用官方的默认主题，我试过在我电脑上有问题，推荐使用<a href="https://github.com/xianmin/hugo-theme-jane">jane主题</a></h3>
+<h3 id="5hugo-server">5.接下来就可以启动项目了，使用<code>hugo server</code>可以使你本地查看你的博客的样子</h3>
+<h3 id="6hugo-new-postyourmdmdcontentpostpost">6.可使用<code>hugo new post/your.md</code>创建新的md文档，当然你也可以手动进入content/post,在post文档新建博客；</h3>
+
     </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Alice Chen</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2019-12-22
+      
+    </span>
+  </p>
   
-</section>
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
 
 
+    
+    
 
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="http://localhost:1313/tags/go/">go</a>
+          <a href="http://localhost:1313/tags/golang/">golang</a>
+          <a href="http://localhost:1313/tags/templates/">templates</a>
+          <a href="http://localhost:1313/tags/themes/">themes</a>
+          <a href="http://localhost:1313/tags/development/">development</a>
+          
+        </div>
 
-
+      
+      <nav class="post-nav">
+        
+        
+      </nav>
+    </footer>
+  </article>
 
   
   
+
+  
+  
+
   
 
   
   
 
   
-  
 
   
-  
 
   
+
+    
+
   
-
-
-
-
 
         </div>
       </div>
