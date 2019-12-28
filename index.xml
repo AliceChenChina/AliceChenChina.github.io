@@ -6,7 +6,7 @@
     <description>Recent content on Jane - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 22 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Dec 2019 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
@@ -27,6 +27,79 @@
 &lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cast&#34;&gt;Cast&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>HTML入门笔记1</title>
+      <link>http://localhost:1313/post/learn-html-1/</link>
+      <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/learn-html-1/</guid>
+      
+        <description>&lt;p&gt;这两天学习了HTML的入门课程，方方主要介绍了什么是HTML,HTML是由谁发明的，以及产生的历史背景是什么，主要解决了什么问题，还讲解了HTML的一些内容，接下来我就把自己学习到的内容分享给大家；&lt;/p&gt;
+&lt;h2 id=&#34;html&#34;&gt;HTML的历史背景&lt;/h2&gt;
+&lt;h3 id=&#34;1html&#34;&gt;1.首先需要知道HTML是什么？&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;HTML的全拼是HyperText Markup Language,超文本标记语言，是比一般的文本文件功能要强大的语言；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2html&#34;&gt;2.HTML解决了什么问题？&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;在使用HTML之前，虽然也可以表达内容，但是内容缺乏逻辑与层次感；
+以下是使用HTML之前要表达的内容：
+&lt;img src=&#34;../../img/19122801.png&#34; alt=&#34;之前&#34;&gt;
+以下是使用HML之后的样子；
+&lt;img src=&#34;../../img/19122802.png&#34; alt=&#34;之后&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3html&#34;&gt;3.HTML产生的历史背景是什么？&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;HTML产品的历史背景是李爵士发明了www(world wide website,万维网)；&lt;/li&gt;
+&lt;li&gt;那么什么是万维网呢，其实就是我们打开一个浏览器，然后输入url按回车键，浏览器就会返回我们内容；&lt;/li&gt;
+&lt;li&gt;这一系列发生的事情是由李爵士发明的，他创造了一个浏览器，也创造了服务器和html；他把HTML放到服务器上面，通过自己创造的浏览器访问自己创造的服务器上面的HTML内容；&lt;/li&gt;
+&lt;li&gt;所以如果要制作网页，最基本要会域名知识（url），服务器知识（http）与HTML知识；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;html-1&#34;&gt;HTML的使用入门&lt;/h2&gt;
+&lt;h3 id=&#34;1html-&#34;&gt;1.HTML 起手应该写什么？&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;在编辑器里面，只要在文件输入!再按TAB键，就会自动生成HTML的结构；
+&lt;img src=&#34;../../img/19122803.png&#34; alt=&#34;HTML起手&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2&#34;&gt;2.常用的表章节的标签有哪些呢？&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;herder 代表网页的头部信息&lt;/li&gt;
+&lt;li&gt;footer 代表网页的底部信息&lt;/li&gt;
+&lt;li&gt;main  代表网页的主体内容&lt;/li&gt;
+&lt;li&gt;article 代表网页中可独立的结构&lt;/li&gt;
+&lt;li&gt;section 代表网页中独立的部分，通常包含一个标题&lt;/li&gt;
+&lt;li&gt;h1-h6 代表标题的等级，数字越小，标题越重要；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3html-1&#34;&gt;3.HTML全局属性有哪些?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;全局属性意思是所有html都有的属性;&lt;/li&gt;
+&lt;li&gt;class 代表html的样式选择器；&lt;/li&gt;
+&lt;li&gt;id 代表也是样式选择器，不同对于一个id名字，一个html内只允许一个，class命名的名字可以有多个；&lt;/li&gt;
+&lt;li&gt;style 代表在html标签内直接定义html的样式；&lt;/li&gt;
+&lt;li&gt;contenteditable 可以让用户直接在页面编辑元素&lt;/li&gt;
+&lt;li&gt;hidden 控制元素的显示隐藏&lt;/li&gt;
+&lt;li&gt;tabindex 可控制tab的顺序&lt;/li&gt;
+&lt;li&gt;title 当鼠标附上去，就会显示title的内容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4&#34;&gt;4.常用的内容标签有哪些?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;1.ol &amp;gt; li   表示有序列表&lt;/li&gt;
+&lt;li&gt;2.ul &amp;gt; li  表示无序列表&lt;/li&gt;
+&lt;li&gt;3.dl dt dd  详情列表&lt;/li&gt;
+&lt;li&gt;4.pre 作用是在写代码时，有多个空格在页面就显示出多少空格，因为浏览器默认是不管有多少个空格，都默认显示成一个空格，如果想显示多个空格就可以使用Pre标签&lt;/li&gt;
+&lt;li&gt;5.code 作用是在页面显示代码片段，而且code使用的是等宽字段&lt;/li&gt;
+&lt;li&gt;6.hr 水平线&lt;/li&gt;
+&lt;li&gt;7.br 另起一行&lt;/li&gt;
+&lt;li&gt;8.a 连接标签&lt;/li&gt;
+&lt;li&gt;9.em 强调&lt;/li&gt;
+&lt;li&gt;10:strong 强调&lt;/li&gt;
+&lt;li&gt;11.quote 内联引用&lt;/li&gt;
+&lt;li&gt;12.blockquote 块级引用&lt;/li&gt;
+&lt;/ul&gt;
 </description>
       
     </item>
