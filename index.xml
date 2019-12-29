@@ -6,7 +6,7 @@
     <description>Recent content on Jane - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 28 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Dec 2019 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
@@ -27,6 +27,53 @@
 &lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cast&#34;&gt;Cast&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>HTML入门笔记2</title>
+      <link>http://localhost:1313/post/learn-html-2/</link>
+      <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/learn-html-2/</guid>
+      
+        <description>&lt;p&gt;今天延续昨天的笔记，继续讲HTML标签的应用；今天主要讲解几个常用标签的使用：a标签、img标签、table标签；&lt;/p&gt;
+&lt;h3 id=&#34;1a&#34;&gt;1.a标签&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;href 属性：英文为hyper refference，意思是超级引用，即超连接；href后面可跟的值有以下几种；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;网址：可使用http协议的网址，也可以是https协议的网址，也可以是//google.com这种形式的网址；当访问//google.com时也能访问到网址内容，其中过程是这样的：当输入//google.com时，会继承父请求协议，即我们本地服务器的协议，我们本地服务器的协议为http所以，访问//google.com相当于访问http://google.com;当访问http://google.com;时，服务器看到访问的地址并不完整，于是会自动返回给我们一个完整的地址Location：http://www.google.com/，并自动访问http://www.google.com/，服务器接到这个请求会自动再返回一个更安全的地址给浏览器https://www.google.com/,浏览器接到这个location，并自动请求，这时服务器认为网址可以了，就会返回我们所需要的资源了；&lt;/li&gt;
+&lt;li&gt;路径：/a/b/c形式与 a/b/c形式；/a/b/c 表示项目的根目录，那么项目的根目录就是启动http-server的目录，是Http协议的根目录，我们之前在命令行输入/user/，此时的/表示文件协议的根目录；a/b/c  表示相对位置的a目录下的b/c;&lt;/li&gt;
+&lt;li&gt;伪协议：javascript:; 作用是当点击a标签时，不会使页面发生变化，当href内容为空时，点击会刷新网页，当为#号时会自动跳到网页顶部；&lt;/li&gt;
+&lt;li&gt;伪协议：mailto:邮件地址；作用是点击a标签会自动调整到发邮件的页面；&lt;/li&gt;
+&lt;li&gt;伪协议：tel:手机号码；当在手机端时，点击可拔打电话；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;target 属性：在哪个窗口打开超链接&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;_blank 在新的页面打开链接&lt;/li&gt;
+&lt;li&gt;_self 在本页面打开链接&lt;/li&gt;
+&lt;li&gt;_top 多用于iframe，在最上层页面打开链接&lt;/li&gt;
+&lt;li&gt;_parent 多用于iframe，在父iframe打开链接&lt;/li&gt;
+&lt;li&gt;window 的名字  x   如果名字为x的window有，就在这个这个window打开，如果没有，就创建一个x名字的window&lt;/li&gt;
+&lt;li&gt;可以为iframe的名字，这样我们就可以自己在我们的网站使用其他的网站&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2table-&#34;&gt;2.table 标签&lt;/h3&gt;
+&lt;p&gt;1.Table 目前里面只有三个标签能用：thead,tbody,tfoot；
+2. Thead &amp;gt; tr(tabble row) &amp;gt; th(table header)；Tbody &amp;gt; tr(table row) &amp;gt; td(table data)
+3. 在使用时，要严格按照上面结构写代码，有时候我们直接用table&amp;gt;tr&amp;gt;td的结构，浏览器也没有报错，不是因为我们写的是对的，是因为浏览器有超强的纠错能力，自动加上了tbody标签；&lt;/p&gt;
+&lt;h3 id=&#34;3img&#34;&gt;3.img标签&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;加载img标签时，浏览器会发出一个get 请求，展示一张图片；&lt;/li&gt;
+&lt;li&gt;alt 属性：表示图片加载失败，会显示alt里面的文字；&lt;/li&gt;
+&lt;li&gt;width 属性，只写width，图片height会自适应；&lt;/li&gt;
+&lt;li&gt;height 属性，只写width，图片width会自适应；&lt;/li&gt;
+&lt;li&gt;onload事件，图片加载成功触发；&lt;/li&gt;
+&lt;li&gt;onerror事件,图片加载失败触发&lt;/li&gt;
+&lt;/ol&gt;
 </description>
       
     </item>
