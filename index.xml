@@ -38,12 +38,11 @@
       
       <guid>http://localhost:1313/post/jsbadic/</guid>
       
-        <description>&lt;h3 id=&#34;1hugo&#34;&gt;1.先下载hugo软件&lt;/h3&gt;
-&lt;h5 id=&#34;js&#34;&gt;js表达式与语句&lt;/h5&gt;
+        <description>&lt;h5 id=&#34;js&#34;&gt;js表达式与语句&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;JavaScript 程序的执行单位为行（line），也就是一行一行地执行。一般情况下，每一行就是一个语句；&lt;/li&gt;
 &lt;li&gt;语句（statement）是为了完成某种任务而进行的操作，主要为了进行某种操作，一般情况下不需要返回值&lt;/li&gt;
-&lt;li&gt;做表达：指一个为了得到返回值的计算式，主要为了进行某种操作，一般情况下不需要返回值&lt;/li&gt;
+&lt;li&gt;表达式：指一个为了得到返回值的计算式，主要为了进行某种操作，一般情况下不需要返回值&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h5 id=&#34;heading&#34;&gt;标识符&lt;/h5&gt;
 &lt;ul&gt;
@@ -63,54 +62,51 @@
 &lt;ul&gt;
 &lt;li&gt;While语句包括一个循环条件和一段代码块，只要条件为真，就不断循环执行代码块。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;条件&lt;/span&gt;) {
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;语句&lt;/span&gt;;
+&lt;pre&gt;&lt;code&gt;while (条件) {
+  语句;
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt;;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;let a = 9;
+let x = 3;
+let i = 0;
 
-&lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;) {
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;);
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;;
+while (i &amp;lt; x) {
+  console.log(i);
+  i++;
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;for-&#34;&gt;for 循环&lt;/h5&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;for-&#34;&gt;for 循环&lt;/h5&gt;
 &lt;p&gt;for语句是循环命令的另一种形式，可以指定循环的起点、终点和终止条件。它的格式如下。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;初始化表达式&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;条件&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;递增表达式&lt;/span&gt;) {
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;语句&lt;/span&gt;
+&lt;pre&gt;&lt;code&gt;for (初始化表达式; 条件; 递增表达式) {
+  语句
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;for语句后面的括号里面，有三个表达式。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;for语句后面的括号里面，有三个表达式。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;初始化表达式（initialize）：确定循环变量的初始值，只在循环开始时执行一次。&lt;/li&gt;
 &lt;li&gt;条件表达式（test）：每轮循环开始时，都要执行这个条件表达式，只有值为真，才继续进行循环。&lt;/li&gt;
 &lt;li&gt;递增表达式（increment）：每轮循环的最后一个操作，通常用来递增循环变量。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;) {
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;);
+&lt;pre&gt;&lt;code&gt;let x = 3;
+for (let i = 0; i &amp;lt; x; i++) {
+  console.log(i);
 }
-&lt;span style=&#34;color:#75715e&#34;&gt;// 0
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// 1
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// 2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;break--continue-&#34;&gt;break 语句和 continue 语句&lt;/h5&gt;
+// 0
+// 1
+// 2
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;break--continue-&#34;&gt;break 语句和 continue 语句&lt;/h5&gt;
 &lt;p&gt;break语句和continue语句都具有跳转作用，可以让代码不按既有的顺序执行。
 break语句用于跳出代码块或循环。
 continue语句用于立即终止本轮循环，返回循环结构的头部，开始下一轮循环。
 如果存在多重循环，不带参数的break语句和continue语句都只针对最内层循环。&lt;/p&gt;
-&lt;h5 id=&#34;label&#34;&gt;标签（label&lt;/h5&gt;
+&lt;h5 id=&#34;label&#34;&gt;标签（label)&lt;/h5&gt;
 &lt;p&gt;JavaScript 语言允许，语句的前面有标签（label），相当于定位符，用于跳转到程序的任意位置，标签的格式如下。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;label&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;语句&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;foo&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;);
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;foo&lt;/span&gt;;
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;本行不会输出&amp;#39;&lt;/span&gt;);
+&lt;pre&gt;&lt;code&gt;foo: {
+  console.log(1);
+  break foo;
+  console.log(&#39;本行不会输出&#39;);
 }
-&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;);
-&lt;span style=&#34;color:#75715e&#34;&gt;// 1
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// 2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+console.log(2);
+// 1
+// 2
+&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     
