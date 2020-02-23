@@ -6,10 +6,19 @@
     <description>Recent content in templates on Jane - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 29 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/tags/templates/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS 的基本语法</title>
+      <link>http://localhost:1313/post/jsbadic/</link>
+      <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/jsbadic/</guid>
+      <description>1.先下载hugo软件 js表达式与语句 JavaScript 程序的执行单位为行（line），也就是一行一行地执行。一般情况下，每一行就是一个语句； 语句（stat</description>
+    </item>
     
     <item>
       <title>HTML常用标签</title>
@@ -18,6 +27,15 @@
       
       <guid>http://localhost:1313/post/learn-html-2/</guid>
       <description>今天延续昨天的笔记，继续讲HTML标签的应用；今天主要讲解几个常用标签的使用：a标签、img标签、table标签； 1.a标签 href 属性：英文为h</description>
+    </item>
+    
+    <item>
+      <title>我最喜欢的男明星--刘亚仁</title>
+      <link>http://localhost:1313/post/myfavoritestar/</link>
+      <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/myfavoritestar/</guid>
+      <description>今天的主题很开心、快乐，自由选主题，使用纯html介绍自己最喜欢的明星！ 刘亚仁</description>
     </item>
     
     <item>

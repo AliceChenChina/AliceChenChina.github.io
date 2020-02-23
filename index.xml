@@ -6,7 +6,7 @@
     <description>Recent content on Jane - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 29 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 Feb 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
@@ -28,6 +28,89 @@
 &lt;/ul&gt;
 &lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 </description>
+      
+    </item>
+    
+    <item>
+      <title>JS 的基本语法</title>
+      <link>http://localhost:1313/post/jsbadic/</link>
+      <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/jsbadic/</guid>
+      
+        <description>&lt;h3 id=&#34;1hugo&#34;&gt;1.先下载hugo软件&lt;/h3&gt;
+&lt;h5 id=&#34;js&#34;&gt;js表达式与语句&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;JavaScript 程序的执行单位为行（line），也就是一行一行地执行。一般情况下，每一行就是一个语句；&lt;/li&gt;
+&lt;li&gt;语句（statement）是为了完成某种任务而进行的操作，主要为了进行某种操作，一般情况下不需要返回值&lt;/li&gt;
+&lt;li&gt;做表达：指一个为了得到返回值的计算式，主要为了进行某种操作，一般情况下不需要返回值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;heading&#34;&gt;标识符&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;最常见的标识符就是变量名、函数名；&lt;/li&gt;
+&lt;li&gt;JavaScript 语言的标识符对大小写敏感，所以a和A是两个不同的标识符。&lt;/li&gt;
+&lt;li&gt;命名规则：第一个字符，可以是任意 Unicode 字母，美元符号（$）和下划线（_）；中文是合法的标识符，可以用作变量名；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;if-else-&#34;&gt;if else 语句&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;if结构先判断一个表达式的布尔值，然后根据布尔值的真伪，执行不同的语句&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;ifelse-&#34;&gt;if&amp;hellip;else 结构&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;if代码块后面，还可以跟一个else代码块，表示不满足条件时，所要执行的代码。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;switch-&#34;&gt;switch 结构&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;While语句包括一个循环条件和一段代码块，只要条件为真，就不断循环执行代码块。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;条件&lt;/span&gt;) {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;语句&lt;/span&gt;;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt;;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;) {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;);
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;for-&#34;&gt;for 循环&lt;/h5&gt;
+&lt;p&gt;for语句是循环命令的另一种形式，可以指定循环的起点、终点和终止条件。它的格式如下。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;初始化表达式&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;条件&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;递增表达式&lt;/span&gt;) {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;语句&lt;/span&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;for语句后面的括号里面，有三个表达式。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;初始化表达式（initialize）：确定循环变量的初始值，只在循环开始时执行一次。&lt;/li&gt;
+&lt;li&gt;条件表达式（test）：每轮循环开始时，都要执行这个条件表达式，只有值为真，才继续进行循环。&lt;/li&gt;
+&lt;li&gt;递增表达式（increment）：每轮循环的最后一个操作，通常用来递增循环变量。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;) {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;);
+}
+&lt;span style=&#34;color:#75715e&#34;&gt;// 0
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// 1
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// 2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;break--continue-&#34;&gt;break 语句和 continue 语句&lt;/h5&gt;
+&lt;p&gt;break语句和continue语句都具有跳转作用，可以让代码不按既有的顺序执行。
+break语句用于跳出代码块或循环。
+continue语句用于立即终止本轮循环，返回循环结构的头部，开始下一轮循环。
+如果存在多重循环，不带参数的break语句和continue语句都只针对最内层循环。&lt;/p&gt;
+&lt;h5 id=&#34;label&#34;&gt;标签（label&lt;/h5&gt;
+&lt;p&gt;JavaScript 语言允许，语句的前面有标签（label），相当于定位符，用于跳转到程序的任意位置，标签的格式如下。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;label&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;语句&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;foo&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;);
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;foo&lt;/span&gt;;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;本行不会输出&amp;#39;&lt;/span&gt;);
+}
+&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;);
+&lt;span style=&#34;color:#75715e&#34;&gt;// 1
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// 2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
       
     </item>
     
@@ -74,6 +157,19 @@
 &lt;li&gt;onload事件，图片加载成功触发；&lt;/li&gt;
 &lt;li&gt;onerror事件,图片加载失败触发&lt;/li&gt;
 &lt;/ol&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>我最喜欢的男明星--刘亚仁</title>
+      <link>http://localhost:1313/post/myfavoritestar/</link>
+      <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/myfavoritestar/</guid>
+      
+        <description>&lt;p&gt;今天的主题很开心、快乐，自由选主题，使用纯html介绍自己最喜欢的明星！&lt;/p&gt;
+&lt;h1 id=&#34;heading&#34;&gt;刘亚仁&lt;/h1&gt;
 </description>
       
     </item>
